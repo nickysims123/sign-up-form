@@ -1,6 +1,10 @@
 :root {
     --left-width: 35vw;
     --right-width: calc(100vw - var(--left-width));
+
+    --blurb-height: 30vh;
+    --form-height: 40vh;
+    --login-height: calc(100vh - calc((var(--blurb-height)) + (var(--form-height))))
 }
 
 
@@ -46,14 +50,33 @@ div {
         color: white;
         font-size: 75px;
     }
-}
 
-.logo-title img {
-    height: 100%;
+    img {
+        height: 100%;
+    }
 }
 
 .right {
     height: 100vh;
     width: var(--right-width);
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.blurb {
+    width: var(--right-width);
+    height: var(--blurb-height);
+    background-color: black;
+}
+
+.sign-up-form {
+    width: var(--right-width);
+    height: var(--form-height);
+    background-color: white;
+}
+
+.login {
+    width: var(--right-width);
+    height: var(--login-height);
+    background-color: purple;
 }
