@@ -36,46 +36,52 @@
                     <div>
                         <label for="firstName">First Name</label>
                         <br>
-                        <input type="text" name="firstName" id="firstName" placeholder="Dude">
+                        <input type="text" name="firstName" id="firstName" placeholder="Dude"
+                        required maxlength="20">
                     </div>
 
                     <div>
                         <label for="lastName">Last Name</label>
                         <br>
-                        <input type="text" name="lastName" id="lastName" placeholder="Surfer">
+                        <input type="text" name="lastName" id="lastName" placeholder="Surfer" 
+                        required maxlength="20">
                     </div>
 
                     <div>
                         <label for="email">Email</label>
                         <br>
-                        <input type="email" name="email" id="email" placeholder="@.com">
+                        <input type="email" name="email" id="email" placeholder="@.com" required
+                        maxlength="20">
                     </div>
 
                     <div>
                         <label for="phoneNumber">Phone Number</label>
                         <br>
-                        <input type="number" name="phoneNumber" id="phoneNumber" placeholder="0123456789">
+                        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="0123456789" required
+                        maxlength="10">
                     </div>
 
                     <div>
                         <label for="password">Password</label>
                         <br>
-                        <input type="text" name="password" id="password">
+                        <input type="text" name="password" id="password" required
+                        maxlength="20">
                     </div>
 
                     <div>
                         <label for="confirmPassword">Confirm Password</label>
                         <br>
-                        <input type="text" name="confirmPassword" id="confirmPassword">
+                        <input type="text" name="confirmPassword" id="confirmPassword" required
+                        maxlength="20">
                     </div>
                 </fieldset>
 
-                <button type="submit" class="submitButton">Submit</button>
+                <button type="submit" class="submitButton">Create Account</button>
             </form>
         </div>
 
         <div class="login">
-
+            <p>Already have an account? <a href="#">Log in</a> (this does nothing)</p>
         </div>
     </div>
 </body>

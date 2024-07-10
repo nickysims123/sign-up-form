@@ -13,6 +13,7 @@ body {
     width: 100vw;
     display: flex;
     margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 div {
@@ -127,6 +128,16 @@ div {
                 -webkit-appearance: none;
                 margin: 0;
                 }
+
+                input:valid {
+                    border-color: green;
+                }
+                input:invalid {
+                    border-color: red;
+                }
+                input:focus {
+                    box-shadow: 0px 2px 10px blue;
+                }
             }
         }
     }
@@ -134,12 +145,26 @@ div {
 
 .submitButton {
     position: absolute;
-    top: 400px;
-    left: 10%;
+    top: 370px;
+    left: 4.5%;
+
+    font-size: 20px;
+    color: white;
+    background-color: rgb(57, 137, 134);
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 0px;
 }
 
 .login {
     width: var(--right-width);
     height: var(--login-height);
     background-color: rgb(240,240,240);
+
+    p {
+        font-size: 20px;
+        position: relative;
+        top: 80px;
+        left: 4.5%;
+    }
 }
