@@ -66,17 +66,30 @@ div {
 .blurb {
     width: var(--right-width);
     height: var(--blurb-height);
-    background-color: black;
+    background-color: rgb(240,240,240);
+
+    p {
+        font-size: 24px;
+        font-weight: 800;
+        font-family: 'Times New Roman', Times, serif;
+
+        margin: 24px;
+        position: relative;
+        top: 50px;
+        max-width: 80%;
+    }
 }
 
 .sign-up-form {
     width: var(--right-width);
     height: var(--form-height);
     background-color: white;
+    position: relative;
+    box-shadow: 0px 5px 10px grey;
 }
 
 .login {
     width: var(--right-width);
     height: var(--login-height);
-    background-color: purple;
+    background-color: rgb(240,240,240);
 }
