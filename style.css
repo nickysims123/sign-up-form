@@ -92,6 +92,7 @@ div {
         width: 75%;
         font-size: 20px;
         font-family: 'Times New Roman', Times, serif;
+        gap: 100px;
 
         fieldset {
             border: 0px;
@@ -101,7 +102,7 @@ div {
             padding: 0px 40px;
             display: flex;
             flex-wrap: wrap;
-            gap: 32px;
+            gap: 50px;
 
             legend {
                 padding: 30px 0px;
@@ -109,7 +110,7 @@ div {
             }
 
             div {
-                height: auto;
+                height: 2rem;
 
                 input {
                     height: 20px;
@@ -120,9 +121,21 @@ div {
                     font-size: 16px;
                     font-family: 'Times New Roman', Times, serif;
                 }
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+                }
             }
         }
     }
+}
+
+.submitButton {
+    position: absolute;
+    top: 400px;
+    left: 10%;
 }
 
 .login {
